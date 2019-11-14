@@ -1,0 +1,9 @@
+resolver: lts-14.14
+# nightly-2019-09-21 # used in tutorial, but doesn't work for me
+# nightly-2019-11-11 # bleeding edge, has no Polysemy
+
+# extra-deps:
+#   - polysemy-1.2.3.0@sha256:d9cfa7942940c7c6d07d1f26ae70c4f1170f9bd6c331bdbe586e810fafc25f17,5878
+
+packages:
+  - .

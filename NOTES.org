@@ -1,0 +1,16 @@
+* references
+The Polysemy library on Github:
+https://github.com/polysemy-research/polysemy#readme
+
+The tutorial this code is based on:
+https://haskell-explained.gitlab.io/blog/posts/2019/07/28/polysemy-is-cool-part-1/index.html
+* requires special language extensions
+https://github.com/polysemy-research/polysemy/blob/f2ca91d57d02f8668d0204ec994a717b206e7575/README.md#necessary-language-extensions
+Could go in package.yaml -- or maybe that's where they went in earlier versions of Cabal, because
+* some handy definitions
+** There's also Members
+Members [CryptoHash, KeyValueStore k v] r => Sem r a 
+  is the same as 
+(Member CryptoHash r, Member (KeyValueStore k v) r) => Sem r a
+* polysemy-zoo is important too
+It defines some Sem instances like KVStore.
